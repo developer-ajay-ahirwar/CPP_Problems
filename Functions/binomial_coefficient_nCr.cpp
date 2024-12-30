@@ -14,8 +14,7 @@ int nCr(int n ,int r){
     int fec_N = fectorial(n);
     int fec_R = fectorial(r);
     int fec_nr = fectorial(n-r);
-    result = fec_R * fec_nr;
-    result = fec_N / result;
+    result = fec_N / (fec_R * fec_nr);
     return result;
 }
 
